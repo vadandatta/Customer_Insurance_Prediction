@@ -1,53 +1,84 @@
-# Customer_Insurance_Prediction
+# Customer-Insurance-Prediction
 
-This project aims to predict whether a customer will purchase an insurance policy based on demographic features using various classification algorithms. The implementation includes data preprocessing, model training, evaluation, and performance comparison.
+This project focuses on predicting whether a customer will purchase insurance based on demographic data using multiple classification algorithms. The models are trained and compared to identify the most accurate approach for binary classification.
+
 ---
+
 ## Project Structure
-Customer_Insurance_Prediction/
-├── data/ # Dataset (not uploaded to GitHub)
-├── plots/ # Confusion matrices and model comparison plot
-├── report/ # Final project report (PDF)
+
+```
+Customer-Insurance-Prediction/
+├── data/                            # Input CSV file (excluded from GitHub)
+├── plots/                           # Confusion matrices, comparison charts
+├── report/                          # Final report in PDF
 ├── src/
-│ ├── preprocess.py # Data loading and preprocessing
-│ ├── train_models.py # Training classification models
-│ ├── evaluate_models.py # Model evaluation and visualization
-│ └── utils.py # Utility functions
+│   ├── preprocess.py                # Data loading and scaling
+│   ├── train_models.py              # Model training functions
+│   ├── evaluate_models.py           # Confusion matrix and accuracy evaluation
+│   └── utils.py                     # Optional visualization helpers
 ├── Customer_Insurance_Prediction.ipynb
-├── main.py # Main script to run the pipeline
-├── requirements.txt # Required Python packages
-├── README.md # Project documentation
-└── .gitignore # Files/directories to exclude from Git
+├── main.py                          # Pipeline runner script
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
+
 ---
-## Dataset
+
+##  Dataset
+
 - **File**: `Social_Network_Ads.csv`
-- **Features**:
-  - Age
-  - Estimated Salary
-- **Target**:
-  - Purchased (0 = No, 1 = Yes)
+- **Features**: Age, Estimated Salary
+- **Target**: Purchased (0 or 1)
+
 ---
-## Models Used
-- Logistic Regression  
-- K-Nearest Neighbors (KNN)  
-- Support Vector Machine (SVM)  
-- Decision Tree Classifier  
-- Random Forest Classifier  
+
+##  Models Trained
+
+- Logistic Regression
+- K-Nearest Neighbors (KNN)
+- Support Vector Machine (SVM)
+- Decision Tree Classifier
+- Random Forest Classifier
+
 ---
-## Workflow
-1. **Preprocessing**: Scaling and train-test split  
-2. **Training**: Fit five classifiers  
-3. **Evaluation**: Accuracy, confusion matrix, classification report  
-4. **Visualization**: Save confusion matrices and accuracy comparison plot
+
+##  Evaluation
+
+Each model is evaluated using:
+- Accuracy Score
+- Confusion Matrix
+- Classification Report
+
+Visual results are saved under `plots/`.
+
 ---
-## How to Run
+
+##  How to Run
+
 1. Install dependencies:
    ```bash
    pip install -r requirements.txt
-2. Place Social_Network_Ads.csv in the data/ folder.
-3. Run the complete pipeline: python main.py
+   ```
+
+2. Place `Social_Network_Ads.csv` in the `data/` folder.
+
+3. Run:
+   ```bash
+   python main.py
+   ```
+
 ---
-##Results
-Confusion matrix images and a bar chart comparing model accuracies are saved in the plots/ directory.
+
+##  Report
+
+The full report is available at:
+```
+report/Customer_Insurance_Report.pdf
+```
+
 ---
-##License
-For educational and academic use only. Please give credit if reused.
+
+## Author
+
+- Vadan Datta
